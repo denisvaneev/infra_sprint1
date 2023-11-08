@@ -1,0 +1,5 @@
+IP: 158.160.18.243;
+name_taski: https://taskiyandex.ddns.net/;
+name_kittygram: https://kittygramyandex.hopoto.org/;
+login: denis12;
+password: atidiv19; 
