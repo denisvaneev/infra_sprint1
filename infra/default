@@ -15,7 +15,6 @@ server {
         try_files $uri /index.html;
     }
 
-
     listen 443 ssl; # managed by Certbot
     ssl_certificate /etc/letsencrypt/live/taskiyandex.ddns.net/fullchain.pem; # managed by Certbot
     ssl_certificate_key /etc/letsencrypt/live/taskiyandex.ddns.net/privkey.pem; # managed by Certbot
@@ -29,12 +28,9 @@ server {
         return 301 https://$host$request_uri;
     } # managed by Certbot
 
-
-
     listen 80;
     server_name 158.160.18.243 taskiyandex.ddns.net;
     return 404; # managed by Certbot
-
 
 }
 
@@ -59,8 +55,6 @@ server {
         try_files $uri /index.html;
     }
 
-
-
     listen 443 ssl; # managed by Certbot
     ssl_certificate /etc/letsencrypt/live/kittygramyandex.hopto.org/fullchain.pem; # managed by Certbot
     ssl_certificate_key /etc/letsencrypt/live/kittygramyandex.hopto.org/privkey.pem; # managed by Certbot
@@ -69,16 +63,13 @@ server {
 
 }
 
-
 server {
     if ($host = kittygramyandex.hopto.org) {
         return 301 https://$host$request_uri;
     } # managed by Certbot
 
-
     server_name kittygramyandex.hopto.org;
     listen 80;
     return 404; # managed by Certbot
-
 
 }
